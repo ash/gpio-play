@@ -1,6 +1,5 @@
 #include <bcm2835.h>
 #include <iostream>
-#include <bitset>
 
 using namespace std;
 
