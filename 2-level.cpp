@@ -15,7 +15,6 @@ int main() {
 
     while(1) {
         int lev = bcm2835_gpio_lev(pin);
-        lev = bcm2835_gpio_lev(pin);
         cout << lev << endl;
         bcm2835_delay(100);
     }
