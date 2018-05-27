@@ -23,6 +23,7 @@ int main() {
     uint32_t* gpioBASE = bcm2835_regbase(BCM2835_REGBASE_GPIO);
 
     // This is needed to prevent theinfluence of other experiments
+    bcm2835_peri_write(gpioBASE + BCM2835_GPHEN0 / 4, 0);
     bcm2835_peri_write(gpioBASE + BCM2835_GPLEN0 / 4, 0);
     bcm2835_peri_write(gpioBASE + BCM2835_GPREN0 / 4, 0);
     bcm2835_peri_write(gpioBASE + BCM2835_GPFEN0 / 4, 0);
